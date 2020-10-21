@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment - Kreiranje Responsive Gallery</title>
+        <style>
+
+            body {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                margin: 40px 0 20px 0;
+                font-size: 2vh;
+                font-weight: normal;
+                text-align: left;
+            }
+
+            .container {
+                max-width: 960px;
+                width: 90%;
+                margin: 0 auto;
+                
+            }
+
+            .row {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+            }
+
+            .row::after {
+                content: "";
+                display: block;
+                clear: left;
+            }
+
+            .column {
+                flex-basis: 16.666%;
+                box-sizing: border-box;
+                padding: 8px;
+            }
+
+            /*.box {
+                height: 80px;
+                margin: 8px auto;
+                border: 1px solid #ddd;
+                border-radius: 12px;
+                padding: 10px;
+                background-repeat: round;
+                background-position: center;
+                background: linear-gradient(transparent -30%, aqua 80%, white 30%), url(placeholder-image.png);
+                filter: opacity(80%);
+                color: white;
+                text-align: center;
+                line-height: 120px;
+                cursor: pointer;
+            }*/
+
+            .tile {
+                width: 140px;
+                border: 1px solid wheat;
+                border-radius: 10px;
+                margin: 10px 10px 10px 10px;
+                cursor: pointer;
+            
+            }
+
+            .tile-background {
+                height: 70px;
+                background-image: url(placeholder-image.png);
+                background-position: center;
+                background-size: cover;
+                background-color: lightseagreen;
+            }
+
+            .tile-text {
+                font-size: 15px;
+                margin: 10px 0px;
+                text-align: center;
+            }
+
+            @media screen and (max-width: 1024px) {
+                .column {
+                    flex-basis: 33.33%;
+                }
+            }
+
+            /*@media screen and (max-width: 896px) {
+                .column {
+                    flex-basis: 41.665%;
+                }
+            }*/
+
+            @media screen and (max-width: 768px) {
+                .column {
+                    flex-basis: 50%;
+                }
+            }
+
+            /*@media screen and (max-width: 591px) {
+                .column {
+                    flex-basis: 75%;
+                }
+            }*/
+
+            @media screen and (max-width: 414px) {
+                .column {
+                    flex-basis: 100%;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h2>Gallery Heading</h2>
+        <div class="container">
+            <div class="row">
+                <div class="tile">
+                    <div class="tile-background"></div>
+                    <div class="tile-text">Image Tile</div>
+                </div>
+                <div class="tile">
+                    <div class="tile-background"></div>
+                    <div class="tile-text">Image Tile</div>
+                </div>
+                <div class="tile">
+                    <div class="tile-background"></div>
+                    <div class="tile-text">Image Tile</div>
+                </div>
+                <div class="tile">
+                    <div class="tile-background"></div>
+                    <div class="tile-text">Image Tile</div>
+                </div>
+                <div class="tile">
+                    <div class="tile-background"></div>
+                    <div class="tile-text">Image Tile</div>
+                </div>
+                <div class="tile">
+                    <div class="tile-background"></div>
+                    <div class="tile-text">Image Tile</div>
+                </div>
+                <div class="tile">
+                    <div class="tile-background"></div>
+                    <div class="tile-text">Image Tile</div>
+                </div>
+                <div class="tile">
+                    <div class="tile-background"></div>
+                    <div class="tile-text">Image Tile</div>
+                </div>
+                <div class="tile">
+                    <div class="tile-background"></div>
+                    <div class="tile-text">Image Tile</div>
+                </div>
+                <div class="tile">
+                    <div class="tile-background"></div>
+                    <div class="tile-text">Image Tile</div>
+                </div>
+            </div>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, cetero tincidunt disputationi ea sea. At eam audiam platonem. Cu modus singulis eam. 
+            Duo munere causae repudiare id, consul dicunt lobortis ei pro, qui etiam possit probatus in. 
+            Sed invenire perpetua ea, alii unum summo mea in, no ius stet commodo. 
+            Ad idque errem vel, erroribus mediocritatem an vim, eu vis doctus audire fabellas. Nonumes intellegam pro cu. 
+            Esse mediocrem definitiones cum cu. Assum docendi democritum ex nam. Cu cum ubique dissentiet, mel at iriure maluisset omittantur. 
+            No per corrumpit cotidieque liberavisse, nam ex vocibus disputando.
+        </p>
+    </body>
+
+</html>
